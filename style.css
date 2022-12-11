@@ -1,0 +1,835 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+
+.rideaux{
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+    border-bottom: 1px solid rgb(0, 110, 255);
+    transform: translateY(-150%);
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+
+}
+
+.rideaux.active{
+    transform: translate(0);
+}
+#rideaux-logo{
+    color: white;
+    font-size: 20px;
+    flex: 0 0 3rem;
+}
+
+#rideaux-un{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+#rideaux-deux{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+#rideaux-trois{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+#rideaux-quatre{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+#rideaux-cinq{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+
+
+
+.nav-toggler {
+    position: fixed;
+    z-index: 10;
+    top: 100%;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: transform 0.3s ease-out,
+    opacity 0.1s ease-out;
+}
+
+.l1{
+    transform: translateY(-10px);
+    background: white;
+}
+
+.l3{
+    transform: translateY(10px);
+    background: white;
+}
+.nav-toggler.active .l1{
+    transform: translateY(0px) rotate(135deg);
+}
+
+.nav-toggler.active .l2{
+    opacity: 0;
+}
+
+.nav-toggler.active .l3{
+    transform: translateY(0px) rotate(-135deg);
+}
+
+
+
+
+
+
+
+
+.noir{
+	background-color: black;
+	color: white;
+}
+
+.test{
+    content: "ddd";
+}
+
+
+
+
+#change:hover{
+	cursor: pointer;
+    transform: scale(1.4);
+    transition: transform 0.4s ease-in-out;
+}
+
+
+
+
+.hautPage {
+    background-color: aquamarine;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+	background: white;
+}
+
+nav a{
+	color: black;
+	text-decoration: none;
+}
+.un::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+.un{
+    position: relative;
+}
+
+
+
+
+.deux::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.deux{
+    position: relative;
+}
+
+
+
+.trois::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+.trois{
+    position: relative;
+}
+
+.trois2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.quatre::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.quatre{
+    position: relative;
+}
+
+
+.cinq::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.cinq{
+    position: relative;
+}
+
+
+.un2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5.4%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.deux2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.trois2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.quatre2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.7%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.cinq2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6.2%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+nav a:hover::after{
+    transform: scale(1);
+}
+
+
+nav {
+	min-height: 10vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+nav ul{
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
+
+
+
+
+#logo{
+	flex: 0 1 40rem;
+}
+
+
+
+
+
+.hautPage  {
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.8)),
+    url(fond.jpg);
+    height: 56vh;
+    padding: 175px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+
+}
+
+.titre  {
+    color: white;
+    line-height: 35px;
+    text-align: center;
+    position: relative;
+}
+
+.titre .t1{
+    font-weight: 500;
+    font-size: 100px;
+    font-family: 'Abril Fatface', cursive;
+    
+    
+}
+.titre .t2{
+    font-size: 40px;
+    color: white;
+    font-weight: normal;
+    font-family: italic;
+}
+
+
+
+
+.hautPage .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0,+80%);
+}
+
+.propos{
+    text-align: center;
+}
+
+
+.langagesTitre{
+    text-align: center;
+}
+
+
+.langage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+
+.langage h1{
+    position: relative;
+    text-align: center;
+   z-index: 100;
+}
+
+
+
+.langage .div1 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 55px;
+    border: 1px solid black;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79); 
+    box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
+    background-image: url("html-css.png");
+    background-size: cover;
+    transition: 1s ease-in-out;
+    
+    
+}
+/* 
+.langage .div1:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+    transform: rotate(5deg);
+} */
+
+
+
+.div1 h1{
+    text-align: center;
+    z-index: 1000;
+}
+
+.div1 span{
+   /* display: none; */
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+   
+    border-radius: 15px;
+    transition: 2s ease-out;
+    z-index: 1000;
+}
+.div1:hover span{
+    display: block;
+   
+}
+
+.langage .div2 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 55px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-image: url("javascript2.png");
+   background-repeat: no-repeat;
+  background-size: 120px 120px;
+   background-position: 80px 60px;
+   -webkit-box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79); 
+    box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
+    transition: 1s ease-in-out;
+    z-index: 1000;
+   
+}
+
+
+
+/* .langage .div2:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+    transform: rotate(-5deg);
+   
+
+}  */
+
+.langage .div2::before{
+    content: "";
+    position: absolute;
+    height: 0px;
+    background-color: yellow;
+    width: 0px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   display: block;
+   transition: 0.5s;
+   animation: 2.5s cubic-bezier(.25, 1, .30, 1) FinCercle both;
+  
+}
+
+.langage .div2:hover::before{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 20px;
+    background-image: url("javascript2.png");
+    background-repeat: no-repeat;
+   background-size: 120px 120px;
+    background-position: 80px 60px;
+    animation: 1.2s cubic-bezier(.25, 1, .30, 1) cercle both;
+   
+}
+
+
+@keyframes cercle {
+    0% {
+      clip-path: circle(0%);
+    }
+    40% {
+      clip-path: circle(40%);
+    }
+    100% {
+      clip-path: circle(125%);
+    }
+  }
+  
+  [transition-style="cercle"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+  }
+
+  @keyframes FinCercle {
+    0% {
+      clip-path: circle(125%);
+    }
+    40% {
+      clip-path: circle(40%);
+    }
+    100% {
+      clip-path: circle(0%);
+    }
+  }
+  
+  [transition-style="FinCercle"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) FinCercle both;
+  }
+
+
+.div2 span{
+    /* display: none; */
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.div2:hover span{
+    display: block;
+}
+
+
+.langage .div3 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 55px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-image: url("php.png");
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79); 
+    box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
+    transition: 1s ease-in-out;
+
+}
+
+/* .langage .div3:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+    transform: rotate(5deg);
+} */
+
+.langage .div3::before{
+    content: "";
+    position: absolute;
+    height: 0px;
+    background-color: #7b89b8;
+    width: 0px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   display: block;
+   transition: 0.5s;
+   animation: 2.5s cubic-bezier(.25, 1, .30, 1) FinCercle both;
+  
+}
+
+.langage .div3:hover::before{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 20px;
+    background-image: url("php.png");
+    background-size: cover;
+    background-position: center;
+    animation: 1.2s cubic-bezier(.25, 1, .30, 1) cercle both;
+   
+}
+
+
+.div3 span{
+    /* display: none;  */ /* ca sert a quand on passe la souris ca affixhe le texte mais sur téléphone ca ne marche pas voila pourquoi je le mes en commentaire*/
+    text-align: center;
+   background-color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+.div3:hover span{
+    display: block;
+}
+
+
+
+.langage .div4 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 55px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-image: url("cSharp.png");
+    background-size: 270px 270px;
+    background-position: 15px 0px ;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79); 
+    box-shadow: 1px 2px 15px 4px rgba(0,0,0,0.79);
+    transition: 1s ease-in-out;
+   
+
+}
+
+/* .langage .div4:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+    transform: rotate(-5deg);
+} */
+
+
+.langage .div4::before{
+    content: "";
+    position: absolute;
+    height: 0px;
+    background-color: #822c98;
+    width: 0px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   display: block;
+   transition: 0.5s;
+   animation: 2.5s cubic-bezier(.25, 1, .30, 1) FinCercle both;
+  
+}
+
+.langage .div4:hover::before{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 20px;
+    background-image: url("cSharp.png");
+    background-size: 270px 270px;
+    background-position: 15px 0px ;
+    animation: 1.2s cubic-bezier(.25, 1, .30, 1) cercle both;
+   
+}
+
+
+
+
+
+.div4 span{
+    /* display: none; */
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.div4:hover span{
+    display: block;
+}
+
+
+
+
+.infos .t3{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+.infos p{
+	text-align: center;
+	width: 550px;
+	margin-left: 69vh;
+    margin: auto;
+}
+
+.footer p{
+    text-align: center;
+}
+
+.basPage{
+
+    padding: 4px;
+    margin: auto;
+}
+
+@media screen and (max-width: 842px) {
+    .nav-toggler {
+        top: 30px;
+        }
+    
+        nav{
+            z-index: 10;
+            position: fixed;
+            width: 100vw;
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: black;
+            border-bottom: 1px solid rgb(0, 110, 255);
+            transform: translateY(-100%);
+            transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+        
+        }
+    
+        
+        .rideaux{
+            z-index: 10;
+            position: fixed;
+            width: 100vw;
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: black;
+            border-bottom: 1px solid rgb(0, 110, 255);
+            transform: translateY(-100%);
+            transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+        
+        }
+        
+        .rideaux.active{
+            transform: translate(0);
+        }
+    
+       #rideaux-change{
+        cursor: pointer;
+       }
+    
+}
+
+@media screen and (max-width: 743px){
+    .titre .t1{
+        font-weight: 500;
+        font-size: 75px;
+        font-family: 'Abril Fatface', cursive;
+}
+}
+
+@media screen and (max-width: 645px){
+    .titre .t1{
+        position: relative;
+        right: 20px;
+}
+}
+
+
+@media screen and (max-width: 557px){
+    .infos p{
+        
+        width: 250px;
+       
+    }
+}
+
+
+/* media téléphone */
+
+@media screen and (max-width: 390px){
+.titre .t1{
+    left: -127px;
+}
+.titre .t2{
+    position: relative;
+    left: -80px;
+}
+}
+
+
+
+/* dimension de  mon téléphone */
+
+
+@media screen and (max-width: 400px){
+    .titre .t1{
+        left: -127px;
+    }
+    .titre .t2{
+        position: relative;
+        left: -80px;
+    }
+
+    }
+
+
+    
+
+
+    /* Fin dimension de mon téléphone */

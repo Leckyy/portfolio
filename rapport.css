@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.rideaux{
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+    transform: translateY(-150%);
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+
+}
+
+.rideaux.active{
+    transform: translate(0);
+}
+#rideaux-logo{
+    color: white;
+    font-size: 20px;
+    flex: 0 0 3rem;
+}
+
+#rideaux-un{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+#rideaux-deux{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+#rideaux-trois{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+#rideaux-quatre{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+#rideaux-cinq{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+
+
+
+.nav-toggler {
+    position: fixed;
+    z-index: 10;
+    top: 100%;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: transform 0.3s ease-out,
+    opacity 0.1s ease-out;
+}
+
+.nav-toggler.rideaux-b .l1{
+    background: white;
+}
+.nav-toggler.rideaux-b .l2{
+    background: white;
+}
+.nav-toggler.rideaux-b .l3{
+    background: white;
+}
+
+.l1{
+    transform: translateY(-10px);
+    background: black;
+}
+
+.l3{
+    transform: translateY(10px);
+    background: black;
+}
+.nav-toggler.active .l1{
+    transform: translateY(0px) rotate(135deg);
+    background: white;
+}
+
+.nav-toggler.active .l2{
+    opacity: 0;
+}
+
+.nav-toggler.active .l3{
+    transform: translateY(0px) rotate(-135deg);
+    background: white;
+}
+
+
+.noir{
+	background-color: black;
+	color: white;
+}
+
+
+.blanc{
+	color: white;
+	background-color: black;
+}
+
+
+#change:hover{
+	cursor: pointer;
+    transform: scale(1.4);
+    transition: transform 0.4s ease-in-out;
+}
+
+
+
+
+.hautPage {
+    background-color: aquamarine;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+	background: white;
+}
+
+nav a{
+	color: black;
+	text-decoration: none;
+}
+.un::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2.8%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+.deux::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4.5%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+.trois::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.trois2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.quatre::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.7%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.cinq::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6.2%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+.un2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2.8%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.deux2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.trois2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.quatre2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.7%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.cinq2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6.2%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+nav a:hover::after{
+    transform: scale(1);
+}
+
+
+nav {
+	min-height: 10vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+nav ul{
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
+
+
+
+
+#logo{
+	flex: 0 1 40rem;
+}
+
+
+
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+
+.FlexContainer div {
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin: 66px;
+   
+}
+
+.FlexContainer .divFlexContainer {
+    position: relative;
+    top: 35px;
+  
+   
+}
+
+.FlexContainer2 {
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    padding: 0;
+}
+
+.FlexContainer2 div {
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin: 66px;
+   
+}
+
+.FlexContainer2 .unDiv {
+    position: relative;
+  top: 150px;
+}
+
+
+
+.FlexContainer3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+   
+    height: auto;
+   
+    flex-direction: row;
+}
+
+.FlexContainer3 div {
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin: 46px;
+   
+    text-align: center;
+}
+
+.image1{
+    position: absolute;
+   left: -75px;
+   
+}
+
+.text1{
+  text-align: left;
+    
+}
+
+
+@media screen and (max-width: 1340px) {
+    nav ul{
+        display: flex;
+        flex: 1 1 50rem;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+                @media screen and (max-width: 842px) {
+                    .nav-toggler {
+                        top: 10px;
+                        right: 90px;
+                       
+                        }
+                    
+                        nav{
+                            z-index: 10;
+                            position: fixed;
+                            width: 100vw;
+                            min-height: 50vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            background: black;
+                            border-bottom: 1px solid rgb(0, 110, 255);
+                            transform: translateY(-100%);
+                            transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+                        
+                        }
+                    
+                        
+                        .rideaux{
+                            z-index: 10;
+                            position: fixed;
+                            width: 100vw;
+                            min-height: 50vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            background: black;
+                            border-bottom: 1px solid rgb(0, 110, 255);
+                            transform: translateY(-100%);
+                            transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+                        
+                        }
+                        
+                        .rideaux.active{
+                            transform: translate(0);
+                        }
+                    
+                        #rideaux-change{
+                            cursor: pointer;
+                           }
+                       
+                    
+                }
+
+                @media screen and (max-width: 628px) {
+                    .image1{
+                        width: 450px;
+                    }
+                    .image2{
+                        width: 350px;
+
+                    }
+                }
+
+
+                @media screen and (max-width: 400px) {
+                   
+                    
+                        nav{
+                            z-index: 10;
+                            position: fixed;
+                            width: 100vw;
+                            min-height: 50vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            background: black;
+                            /* border-bottom: 1px solid rgb(0, 110, 255); */
+                            transform: translateY(-150%);
+                            transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+                        
+                        }
+                    
+                        
+                        .rideaux{
+                            z-index: 10;
+                            position: fixed;
+                            width: 100vw;
+                            min-height: 50vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            background: black;
+                            /* border-bottom: 1px solid rgb(0, 110, 255); */
+                            transform: translateY(-100%);
+                            transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+                        
+                        }
+                        
+                        .rideaux.active{
+                            transform: translate(0);
+                        }
+                    
+                        #rideaux-change{
+                            cursor: pointer;
+                           }
+
+                          
+
+
+                       
+                    
+                }

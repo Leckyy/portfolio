@@ -1,0 +1,414 @@
+
+.rideaux{
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+    transform: translateY(-150%);
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+
+}
+
+.rideaux.active{
+    transform: translate(0);
+}
+#rideaux-logo{
+    color: white;
+    font-size: 20px;
+    flex: 0 0 3rem;
+}
+
+#rideaux-un{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+#rideaux-deux{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+#rideaux-trois{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+#rideaux-quatre{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+#rideaux-cinq{
+    color: white;
+    flex: 0 0 2rem;
+}
+
+
+
+
+.nav-toggler {
+    position: fixed;
+    z-index: 10;
+    top: 100%;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: transform 0.3s ease-out,
+    opacity 0.1s ease-out;
+}
+
+.nav-toggler.rideaux-b .l1{
+    background: white;
+}
+.nav-toggler.rideaux-b .l2{
+    background: white;
+}
+.nav-toggler.rideaux-b .l3{
+    background: white;
+}
+
+.l1{
+    transform: translateY(-10px);
+    background: black;
+}
+
+.l3{
+    transform: translateY(10px);
+    background: black;
+}
+.nav-toggler.active .l1{
+    transform: translateY(0px) rotate(135deg);
+    background: white;
+}
+
+.nav-toggler.active .l2{
+    opacity: 0;
+}
+
+.nav-toggler.active .l3{
+    transform: translateY(0px) rotate(-135deg);
+    background: white;
+}
+
+
+.noir{
+	background-color: black;
+	color: white;
+}
+
+
+.blanc{
+	color: white;
+	background-color: black;
+}
+
+
+#change:hover{
+	cursor: pointer;
+    transform: scale(1.4);
+    transition: transform 0.4s ease-in-out;
+}
+
+
+
+
+
+.hautPage {
+    background-color: aquamarine;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+.header{
+	background: white;
+}
+
+nav a{
+	color: black;
+	text-decoration: none;
+}
+.un::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2.8%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+.deux::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5.5%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+.trois::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4.5%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.trois2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.quatre::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.4%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.cinq::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.8%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+.un2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2.8%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.deux2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5.5%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+.quatre2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.4%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.cinq2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7.8%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+nav a:hover::after{
+    transform: scale(1);
+}
+
+
+nav {
+	min-height: 10vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+nav ul{
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
+
+
+
+
+#logo{
+	flex: 0 1 40rem;
+}
+.titre1{
+    display: inline-block;
+    position: relative;
+    left: 24%;
+    top: 100px;
+    transform: translate(-25%);
+}
+.texte{
+    position: relative;
+    top: 100px;
+    left: 20%;
+    width: 400px;
+   
+}
+
+.image1{
+    position: relative;
+    top: -100px;
+    left: 60%;
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    .nav-toggler {
+
+        top: 10px;
+        right: 15px;
+       
+        
+        }
+    
+        nav{
+            z-index: 10;
+            position: fixed;
+            width: 100vw;
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: black;
+            /* border-bottom: 1px solid rgb(0, 110, 255); */
+            transform: translateY(-150%);
+            transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+        
+        }
+    
+        
+        .rideaux{
+            z-index: 10;
+            position: fixed;
+            width: 100vw;
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: black;
+            /* border-bottom: 1px solid rgb(0, 110, 255); */
+            transform: translateY(-110%);
+            transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+        
+        }
+        
+        .rideaux.active{
+            transform: translate(0);
+            transform: translateY(-7%);
+        }
+    
+        #rideaux-change{
+            cursor: pointer;
+           }
+
+
+        .titre1{
+        position: relative;
+        display: inline-block;
+        left: 25%;
+        transform: translate(-25%);
+        }
+        .texte{
+        display: inline-block;
+        position: relative;
+        left: 25%;
+        transform: translate(-25%);
+        width: 25%px;
+        text-align: left;
+       margin: auto;
+        }
+
+        .image1{
+            position: relative;
+            top: 100px;
+            left: 10%;
+        }
+
+
+        }
